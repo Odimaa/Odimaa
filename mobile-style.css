@@ -1,0 +1,17 @@
+@media only screen and (max-width: 768px) {
+  .flip-card {
+    margin: 0 auto;
+    /* Remove this if you don't want the 3D effect */
+  }
+}
+
+/* screen size 375px */
+
+@media only screen and (max-width: 375px) {
+  .flip-card {
+    margin: 0 auto;
+    /* Remove this if you don't want the 3D effect */
+  }
+}
+
+@media only screen and (max-width: 320px) {}
