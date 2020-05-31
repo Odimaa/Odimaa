@@ -3,6 +3,11 @@
     margin: 0 auto;
     /* Remove this if you don't want the 3D effect */
   }
+
+  h1{
+    font-size: 30px;
+    
+  }
 }
 
 /* screen size 375px */

@@ -5,6 +5,8 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <link href='https://fonts.googleapis.com/css?family=Annie Use Your Telescope' rel='stylesheet'>
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
@@ -12,11 +14,11 @@
   <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
   <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet" />
+  <script src="https://unpkg.com/scrollreveal"></script>
+
   <link rel="stylesheet" href="./style.css" />
   <link rel="stylesheet" href="./mobile-style.css">
   <link rel="icon" href="./assets/images.png">
-
-  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
 
 
   <title>Portfolio</title>
@@ -45,11 +47,14 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#section-5">My Work</a>
-
-
-
-              </form>
             </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#section-4">Contact</a>
+            </li>
+
+
+            </form>
           </ul>
         </div>
       </div>
@@ -59,18 +64,22 @@
 
   </header>
 
+
+
   <!-- Section 1 -->
   <section id="section-1">
     <div class="container text-left">
       <div class="row landing">
-        <div class="col-md-6  col-sm-12  text-white">
+        <div class="col-md-8  col-sm-12  text-white">
           <div class="typewriter">
 
 
-            <h1>Hi, I'm Allen!</h1>
+            <h1 align="center">Hi, I'm Allen!</h1>
+            <div class="button_cont" align="center"><a class="example_e" href="#section-2">Explore</a></div>
+
           </div>
         </div>
-        <div class="col-md-5 col-sm-12  h-25">
+        <div class="col-md-4 col-sm-12  h-25">
           <img src="./assets/standing-2.svg" alt="Book" />
 
         </div>
@@ -86,7 +95,7 @@
     <div class="container pt-5">
       <div class="row text-left">
         <div class="col-md-6 col-sm-12 ">
-          <div class="frame">
+          <div class="frame animate-left">
             <nav class="menu">
               <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
               <label class="menu-open-button" for="menu-open"> <span class="lines line-1"></span> <span
@@ -94,14 +103,15 @@
               <a href="#" class="menu-item item-1"> <i class="fab fa-html5 "></i> </a>
               <a href="#" class="menu-item item-2"> <i class="fab fa-vuejs "></i> </a>
               <a href="#" class="menu-item item-3"> <i class="fab fa-node "></i> </a>
-              <a href="#" class="menu-item item-4"> <i class="fab fa-css3-alt"></i> </a> <a href="#"
-                class="menu-item item-5"> <i class="fab fa-bootstrap"></i> </a>
-              <a href="#" class="menu-item item-6"> <i class="fab fa-react"></i> </a> </nav>
+              <a href="#" class="menu-item item-4"> <i class="fab fa-css3-alt"></i> </a>
+              <a href="#" class="menu-item item-5"> <i class="fab fa-js"></i> </a>
+              <a href="#" class="menu-item item-6"> <i class="fab fa-git"></i></a> </nav>
+
 
           </div>
         </div>
         <div class="col-md-6 col-sm-12  ">
-          <div class="frame2 mt-5">
+          <div class="frame2 mt-5 animate-right">
 
             <h2 style="font-weight: bolder;">FRONT END FOCUSED<br> </h2>
 
@@ -123,24 +133,28 @@
     </div>
   </section>
 
+
+
   <section id="section-5">
     <div class="container pt-5">
       <h1 class="pb-5" style="text-align:center;">Project Portfolio</h1>
       <div class="row">
         <div class="col-md-4 col-sm-12 p-3">
-          <div class="flip-card">
+          <div class="flip-card animate-top">
             <div class="flip-card-inner">
               <div class="flip-card-front">
-                <img src="./assets/game.jpg" alt="Avatar" style="width:300px;height:300px;">
+                <h3 class="mode-b  p-5">Rock Paper Scissors</h3>
+
               </div>
               <div class="flip-card-back">
+
+
                 <div class="button_cont mt-5" centered"><a class="example_e" data-toggle="modal"
                     data-target="#myModal-1">View</a></div>
 
 
 
 
-                <h3 class="mt-5">Rock Paper Scissors</h3>
 
 
 
@@ -171,10 +185,9 @@
         </div>
 
         <div class="col-md-4 col-sm-12 p-3">
-          <div class="flip-card">
+          <div class="flip-card animate-top2">
             <div class="flip-card-inner ">
               <div class="flip-card-front">
-                <img src="./assets/ecommerce.png" alt="Avatar" style="width:300px;height:300px;">
               </div>
               <div class="flip-card-back">
 
@@ -185,10 +198,9 @@
         </div>
 
         <div class="col-md-4 col-sm-12 p-3">
-          <div class="flip-card">
+          <div class="flip-card animate-top3">
             <div class="flip-card-inner">
               <div class="flip-card-front">
-                <img src="./assets/cinema.jpg" alt="Avatar" style="width:300px;height:300px;">
               </div>
               <div class="flip-card-back">
                 <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open
@@ -224,182 +236,114 @@
 
   </section>
 
-  <section id="section-6">
-    <div class="container pt-2">
+
+
+
+  <section id="section-4">
+    <div class="container pt-5">
       <div class="row">
-        <div class="col-md-4 col-sm-12 p-3">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <img src="./assets/pizzaboy.png" alt="Avatar" style="width:300px;height:300px;">
+        <div class="col-md-12">
+          <!--Section: Contact v.2-->
+          <section class="mb-4 animate-bottom">
 
-              </div>
-              <div class="flip-card-back">
-                <button type="button" class="btn btn-info btn-lgv centered" data-toggle="modal"
-                  data-target="#myModals">Open</button>
-              </div>
-            </div>
-          </div>
+            <!--Section heading-->
+            <h2 class="h1-responsive font-weight-bold text-center mb-5">Contact Me</h2>
 
-          <!-- Modal -->
-          <div class="modal fade" id="myModals" role="dialog">
-            <div class="modal-dialog modal-lg">
 
-              <!-- Modal content-->
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>
-                <div class="modal-body">
-                  <img src="./assets/Portfolio.gif" class="img-responsive">
-                  <p>Tech Stack & Features:</p>
-                  <ul></ul>
-                  <li><span class="fa-li"><i class="fas fa-check-square"></i></span> Vue</li>
-                  <li>Vue Router</li>
-                  <li>Vue CLI</li>
-                  <li>CSS</li>
-                  </ul>
-                </div>
-                <div class="modal-footer">
+            <div class="row">
 
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-              </div>
+              <!--Grid column-->
+              <div class="col-md-9 mb-md-0 mb-5">
+                <form id="contact-form" name="contact-form" action="mail.php" method="POST">
 
-            </div>
-          </div>
-        </div>
+                  <!--Grid row-->
+                  <div class="row">
 
-        <div class="col-md-4 col-sm-12 p-3">
-          <div class="flip-card">
-            <div class="flip-card-inner ">
-              <div class="flip-card-front">
-                <img src="./assets/iron-man.jpg" alt="Avatar" style="width:300px;height:300px;">
-              </div>
-              <div class="flip-card-back">
-
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="col-md-4 col-sm-12 p-3">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <img src="./assets/chat.jpg" alt="Avatar" style="width:300px;height:300px;">
-              </div>
-              <div class="flip-card-back">
-                <button type="button" class="btn btn-info btn-lgv mt-5" data-toggle="modal" data-target="#myModal">Open
-                  Modal</button>
-
-                <!-- Modal -->
-                <div class="modal fade" id="myModal" role="dialog">
-                  <div class="modal-dialog modal-lg">
-
-                    <!-- Modal content-->
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                      </div>
-                      <div class="modal-body">
-                        <img src="./assets/Portfolio.gif" class="img-responsive"> </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                      <div class="md-form mb-0">
+                        <input type="text" id="name" name="name" class="form-control">
+                        <label for="name" class="">Your name</label>
                       </div>
                     </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                      <div class="md-form mb-0">
+                        <input type="text" id="email" name="email" class="form-control">
+                        <label for="email" class="">Your email</label>
+                      </div>
+                    </div>
+                    <!--Grid column-->
 
                   </div>
-                </div>
+                  <!--Grid row-->
 
+                  <!--Grid row-->
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="md-form mb-0">
+                        <input type="text" id="subject" name="subject" class="form-control">
+                        <label for="subject" class="">Subject</label>
+                      </div>
+                    </div>
+                  </div>
+                  <!--Grid row-->
+
+                  <!--Grid row-->
+                  <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-12">
+
+                      <div class="md-form">
+                        <textarea type="text" id="message" name="message" rows="2"
+                          class="form-control md-textarea"></textarea>
+                        <label for="message">Your message</label>
+                      </div>
+
+                    </div>
+                  </div>
+                  <!--Grid row-->
+
+                </form>
+
+                <div class="text-center text-md-center">
+                  <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+                </div>
+                <div class="status"></div>
               </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-md-3 text-center">
+                <ul class="list-unstyled mb-0">
+                  <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                    <p>Nigeria</p>
+                  </li>
+
+                  <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                    <p>+ 234 815 931 9442</p>
+                  </li>
+
+                  <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                    <p>odimaa.horsfall@gmail.com</p>
+                  </li>
+                </ul>
+              </div>
+              <!--Grid column-->
+
             </div>
-          </div>
+
+          </section>
+          <!--Section: Contact v.2-->
         </div>
       </div>
     </div>
-
-
-
   </section>
+  </main>
 
-
-  <!-- 
-  <section id="section-6">
-
-    <div class="container pt-5">
-      <div class="row text-left">
-        <div class="col-md-6 col-sm-12 ">
-          <div class="message pb-5">
-
-
-            <form action="mailto:odimaa.horsfall@gmail.com" method="post" enctype="text/plain"
-              class="text-center border border-light p-5">
-
-              <h2 style="text-align: center; font-weight: bolder;" class="pb-4 text-black">Contact me</h2>
-
-              <div class="form-row mb-1">
-                <div class="col">
-                   <input type="text" name="first_name" id="defaultRegisterFormFirstName" class="form-control"
-                    placeholder="First name">
-                </div>
-                <div class="col">
-                   <input type="text" name="last_name" id="defaultRegisterFormEmail" class="form-control mb-4"
-                    placeholder="Last Name">
-
-                </div>
-              </div>
-
-
-               <div class="form-row mb-4">
-
-                <input type="email" name="email" id="defaultRegisterPhonePassword" class="form-control"
-                  placeholder="Email" aria-describedby="defaultRegisterFormPhoneHelpBlock">
-              </div>
-              <div class="form-row mb-4">
-
-                <div class="input-group">
-                  <div class="input-group-prepend">
-                  </div>
-                  <textarea class="form-control" name="message" aria-label="With textarea"
-                    placeholder="Tell us about what you need us to do"></textarea>
-                </div>
-              </div>
-              <div class="button_cont" align="center"><a class="example_e" href="add-website-here" target="_blank"
-                  rel="nofollow noopener">Contact</a></div>
-
-              <input type="submit" value="Send">
-
-            </form>
-
-
-          </div>
-
-        </div>
-        <div class="col-md-6 col-sm-12  mt-5 ">
-
-          <h3>Contact Info</h3>
-
-
-          <i class=" fas fa-phone-square mt-3 "></i> &nbsp+234-815-931-9442
-          <br>
-
-          <i class="fas fa-envelope-square mt-3 "></i> &nbspodimaa.horsfall@gmail.com
-          <hr />
-
-
-
-          <a href="https://www.linkedin.com/in/odimaa-allen-horsfall-914171131/"><i
-              class="fab fa-linkedin fa-4x icon-3d"></i></a> &nbsp
-          <a href="https://github.com/Odimaa?tab=repositories"><i class="fab fa-github fa-4x icon-3d"></i></a>
-          <hr />
-
-        </div>
-      </div>
-  </section>
-
- -->
   <section class="contact">
     <div class="container-fluid text-center text-md-left">
 
@@ -427,9 +371,6 @@
       </div>
     </div>
   </section>
-
-
-  </main>
   <footer class="page-footer font-small mdb-color pt-4">
     <div class="container-fluid text-center text-md-left">
 

@@ -1,9 +1,9 @@
-html,
-body {
-  height: 100%;
-  font-family: "Roboto";
-  scroll-behavior: smooth;
-
+ 
+ 
+html {
+  font-family: 'Annie Use Your Telescope';
+  font-size: 22px;
+    scroll-behavior: smooth;
 }
 
 .centered {
@@ -19,7 +19,7 @@ section {
 }
 
 h1 {
-  font-size: 30pt;
+  font-size: 50pt;
 }
 
 h2 {
@@ -83,7 +83,7 @@ p {
   font-family: monospace;
   overflow: hidden;
   /* Ensures the content is not revealed until the animation */
-  border-right: 0.15em solid rgb(255, 255, 255);
+  border-right: 0.15em transparent rgb(255, 255, 255);
   /* The typwriter cursor */
   white-space: nowrap;
   /* Keeps the content on a single line */
@@ -91,7 +91,7 @@ p {
   /* Gives that scrolling effect as the typing happens */
   letter-spacing: 0.15em;
   /* Adjust as needed */
-  animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
+  animation: typing 4.5s steps(30, end), blink-caret 5s step-end infinite;
 }
 
 /* The typing effect */
@@ -464,6 +464,29 @@ a {
 
 }
 
+.btn-primary {
+  border: none;
+  background: #404040;
+  color: #ffffff !important;
+  font-weight: 100;
+  padding: 20px;
+  text-transform: uppercase;
+  border-radius: 6px;
+  display: inline-block;
+  transition: all 0.3s ease 0s;
+}
+
+.btn-primary:hover {
+  color: #404040 !important;
+  font-weight: 700 !important;
+  letter-spacing: 3px;
+  background: white;
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  transition: all 0.3s ease 0s;
+}
+
+
 
 .example_e {
   border: none;
@@ -519,9 +542,9 @@ textarea {
 
 
 .flip-card {
-  background-color: transparent;
+  background-color: transparen;
   width: 300px;
-  height: 300px;
+  height: 200px;
   perspective: 1000px;
   /* Remove this if you don't want the 3D effect */
 }
@@ -554,15 +577,16 @@ textarea {
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-  background-color: #bbb;
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgb(3, 33, 53) 100%, rgba(0, 212, 255, 1) 100%);
   color: black;
-}
+ }
 
 /* Style the back side */
 .flip-card-back {
   background: rgb(2, 0, 36);
-  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(52, 150, 216, 1) 100%, rgba(0, 212, 255, 1) 100%);
+  background-image: url("./assets/back.gif");
   color: white;
+  padding: 10px;
   transform: rotateY(180deg);
 }
 
@@ -570,7 +594,11 @@ textarea {
   padding-left: 15px;
 }
 
-
+.single-animation{
+  opacity: 0;
+  animation: fadeDown .5s forwards;
+  animation-delay: 1.5s;
+}
 
 footer {
   background-color: #0e101f;
